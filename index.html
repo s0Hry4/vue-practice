@@ -9,6 +9,14 @@
             {{ message }}
         </div>
         
+        <div id="list">
+            <ol>
+                <li v-for="todo in todos">
+                {{ todo.text }}
+                </li>
+            </ol>
+        </div>
+        
         <script src="index.js"></script>
     </body>
 </html>
