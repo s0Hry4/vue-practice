@@ -1,6 +1,6 @@
 Vue.component('monstar-item', {
     props:['monstar'],
-    template: 'monstar-item.html'
+    template: './monstar-item.html'
 });
 
 var app = new Vue({ 
