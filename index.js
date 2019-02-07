@@ -1,16 +1,16 @@
 Vue.component('monstar-item', {
     props:['monstar'],
-    template: './monstar-item.html'
+    template: '<li>{{ monstar.name }}</li>'
 });
 
 var app = new Vue({ 
     el: '#app',
     data: {
-        message: '伝説が嫌い'
+        message: '伝説'
     },
     methods: {
         changeStatus: function () {
-            this.message = '伝説が好き';
+            this.message = '伝説♡';
         }
     }
 });
