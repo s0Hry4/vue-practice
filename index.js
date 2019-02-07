@@ -1,11 +1,11 @@
 var app = new Vue({ 
     el: '#app',
     data: {
-        message: '三鳥'
+        message: '三犬'
     },
     methods: {
         changeMonstar: function () {
-            this.message = this.message.split('').reverse().join('');
+            this.message = '三鳥';
             list.monstars = [
                     { name: 'ファイヤー' },
                     { name: 'サンダー' },
