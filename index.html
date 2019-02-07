@@ -7,13 +7,20 @@
         
         <div id="app">
             <p>{{ message }}</p>
-            <button v-on:click="changeMonstar">Change Monstar</button>
+            <button v-on:click="changeStatus">Change Status</button>
             <input v-model="message">
         </div>
         
         <div id="list">
             <ol>
-                <monstar-item></monstar-item>
+                <monstar-item
+                    v-for="item in dogs"
+                    v-bind:todo="item"
+                ></monstar-item>
+                <monstar-item
+                    v-for="item in birds"
+                    v-bind:todo="item"
+                ></monstar-item>
             </ol>
         </div>
         

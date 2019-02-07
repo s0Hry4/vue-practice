@@ -1,20 +1,16 @@
 Vue.component('monstar-item', {
-  template: 'monstar-item.html'
-})
+    props:['monstars'],
+    template: 'monstar-item.html'
+});
 
 var app = new Vue({ 
     el: '#app',
     data: {
-        message: '三犬'
+        message: '伝説が嫌い'
     },
     methods: {
-        changeMonstar: function () {
-            this.message = '三鳥';
-            list.monstars = [
-                    { name: 'ファイヤー' },
-                    { name: 'サンダー' },
-                    { name: 'フリーザー' }
-                ];
+        changeStatus: function () {
+            this.message = '伝説が好き';
         }
     }
 });
@@ -22,10 +18,15 @@ var app = new Vue({
 var list = new Vue({
   el: '#list',
   data: {
-    monstars: [
+    dogs: [
       { name: 'エンテイ' },
       { name: 'ライコウ' },
       { name: 'スイクン' }
+    ],
+    birds: [
+        { name: 'ファイヤー' },
+        { name: 'サンダー' },
+        { name: 'フリーザー' }
     ]
-  }
+}
 });
