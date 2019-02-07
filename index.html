@@ -16,10 +16,12 @@
                 <monstar-item
                     v-for="item in dogs"
                     v-bind:monstar="item"
+                    v-bind:key="item.id"
                 ></monstar-item>
                 <monstar-item
                     v-for="item in birds"
                     v-bind:monstar="item"
+                    v-bind:key="item.id"
                 ></monstar-item>
             </ol>
         </div>
