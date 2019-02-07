@@ -1,3 +1,7 @@
+Vue.component('monstar-item', {
+  template: 'monstar-item.html'
+})
+
 var app = new Vue({ 
     el: '#app',
     data: {
