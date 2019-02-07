@@ -1,5 +1,5 @@
 Vue.component('monstar-item', {
-    props:['monstars'],
+    props:['monstar'],
     template: 'monstar-item.html'
 });
 
