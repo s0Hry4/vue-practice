@@ -19,14 +19,14 @@ var list = new Vue({
   el: '#list',
   data: {
     dogs: [
-      { name: 'エンテイ' },
-      { name: 'ライコウ' },
-      { name: 'スイクン' }
+      { id: 0,name: 'エンテイ' },
+      { id: 0,name: 'ライコウ' },
+      { id: 0,name: 'スイクン' }
     ],
     birds: [
-        { name: 'ファイヤー' },
-        { name: 'サンダー' },
-        { name: 'フリーザー' }
+        { id: 0,name: 'ファイヤー' },
+        { id: 0,name: 'サンダー' },
+        { id: 0,name: 'フリーザー' }
     ]
 }
 });
